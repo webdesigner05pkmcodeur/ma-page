@@ -1,0 +1,172 @@
+/*police d'ecriture*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+* {
+    margin: 0; /* Supprime la marge par défaut de tous les éléments */
+    padding: 0; /* Supprime le remplissage par défaut de tous les éléments */
+    box-sizing: border-box; /* Inclut la bordure et le remplissage dans la largeur et la hauteur */
+    font-family: 'Roboto', sans-serif; /* Définit la police de caractère par défaut */
+    background-color: #fdfcff; /* Définit une couleur de fond sombre */
+}
+
+body {
+    display: flex; /* Utilise le modèle de boîte flexible pour la mise en page */
+    flex-direction: column; /* Aligne les éléments enfants en colonne */
+    min-height: 100vh; /* Assure que le corps occupe au moins la hauteur de la fenêtre */
+    background-color: #f3f1f6; /* Définit une couleur de fond sombre */
+}
+
+.link {
+    margin: 20px; /* Ajoute une marge autour de l'élément */
+    width: fit-content; /* Ajuste la largeur à la taille du contenu */
+    position: relative; /* Positionne l'élément par rapport à son parent */
+    text-decoration: 0; /* Supprime la décoration de texte (mais devrait être 'none') */
+    background-color: #37a6ff; /* Définit une couleur de fond bleue */
+    color: #fff; /* Définit la couleur du texte à blanc */
+    padding: 10px 25px; /* Ajoute du remplissage autour du texte */
+    border-radius: 6px; /* Arrondit les coins de l'élément */
+    font-size: 14px; /* Définit la taille de la police */
+}
+
+span {
+    position: absolute; /* Positionne l'élément par rapport à son parent ('.link') */
+    top: -9px; /* Positionne le span vers le haut */
+    right: -9px; /* Positionne le span à droite */
+    background-color: red; /* Définit une couleur de fond rouge */
+    height: 20px; /* Définit une hauteur fixe */
+    width: 20px; /* Définit une largeur fixe */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    align-items: center; /* Aligne verticalement le contenu au centre */
+    justify-content: center; /* Aligne horizontalement le contenu au centre */
+    border-radius: 50%; /* Rend l'élément circulaire */
+    font-size: 12px; /* Définit la taille de la police */
+    color: #fff; /* Définit la couleur du texte à blanc */
+}
+
+.products_list {
+    margin: 100px auto; /* Centre horizontalement et ajoute de la marge en haut */
+    position: relative; /* Positionne l'élément par rapport à son parent */
+    width: 70%; /* Définit une largeur de 70% */
+    display: grid; /* Utilise le modèle de grille */
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Crée des colonnes flexibles */
+    grid-gap: 25px; /* Ajoute un espacement entre les éléments de la grille */
+}
+
+.product {
+    background-color: #fff; /* Définit une couleur de fond blanche */
+    width: 100%; /* Prend toute la largeur disponible */
+    box-shadow: 0 0 5px rgba(red, green, blue, alpha); /* Définit une ombre (incomplète, car les valeurs doivent être définies) */
+    border-radius: 6px; /* Arrondit les coins */
+    overflow: hidden; /* Cache le contenu qui dépasse */
+    transition: 0.5s; /* Ajoute une transition fluide pour les changements */
+}
+
+.product:hover {
+    transform: scale(1.1); /* Agrandit légèrement le produit au survol */
+}
+
+image {
+    width: 100%; /* Prend toute la largeur de son conteneur */
+    height: 100%; /* Remplira toute la hauteur */
+    object-fit: cover; /* Ajuste l'image pour remplir tout l'espace */
+}
+
+.image-container {
+    display: flex; /* Utilise le modèle de boîte flexible */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.image-ronde {
+    width: 150px; /* Définit une largeur fixe */
+    height: 150px; /* Définit une hauteur fixe */
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* Ajuste l'image pour remplir tout l'espace */
+    overflow: hidden; /* Cache le contenu qui dépasse */
+}
+
+.image_product {
+    height: 200px; /* Définit une hauteur fixe */
+    width: 100%; /* Prend toute la largeur disponible */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+}
+
+.image_product img {
+    height: 150px; /* Définit une hauteur fixe pour l'image */
+    width: 150px; /* Définit une largeur fixe pour l'image */
+    object-fit: cover; /* Ajuste l'image pour remplir tout l'espace */
+    padding: 20px; /* Ajoute du remplissage autour de l'image */
+}
+
+.content {
+    margin-top: 0px; /* Pas de marge en haut */
+    margin-bottom: 30px; /* Ajoute une marge en bas */
+    height: fit-content; /* Ajuste la hauteur au contenu */
+    text-align: center; /* Centre le texte */
+}
+
+.price {
+    margin: 15px 0; /* Ajoute une marge en haut et en bas */
+    font-weight: 400; /* Définit le poids de la police */
+    color: #37a6ff; /* Définit une couleur de texte bleue */
+}
+
+.id_product {
+    text-align: center; /* Centre le texte */
+    text-decoration: 0; /* Supprime la décoration de texte (mais devrait être 'none') */
+    background-color: #37a6ff; /* Définit une couleur de fond bleue */
+    letter-spacing: 1px; /* Ajoute de l'espace entre les lettres */
+    color: #fff; /* Définit la couleur du texte à blanc */
+    padding: 10px 10%; /* Ajoute du remplissage autour du texte */
+    border-radius: 6px; /* Arrondit les coins */
+}
+
+/* Panier css */
+.Panier {
+    display: flex; /* Utilise le modèle de boîte flexible */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    min-height: 100vh; /* Assure que le conteneur prend la hauteur de la fenêtre */
+}
+
+.Panier img {
+    width: 40px; /* Définit une largeur fixe pour l'image */
+    padding: 8px o; /* Ajoute un remplissage autour de l'image (erreur possible avec 'o') */
+}
+
+.Panier section {
+    width: 70%; /* Définit une largeur de 70% */
+    background-color: #fff; /* Définit une couleur de fond blanche */
+    padding: 10px; /* Ajoute du remplissage */
+    border-radius: 6px; /* Arrondit les coins */
+}
+
+table {
+    border-collapse: collapse; /* Supprime les espaces entre les bordures des cellules */
+    width: 100%; /* Prend toute la largeur disponible */
+    letter-spacing: 1px; /* Ajoute de l'espace entre les lettres */
+}
+
+th {
+    padding: 10px 0; /* Ajoute du remplissage en haut et en bas */
+    font-weight: 400; /* Définit le poids de la police */
+}
+
+td {
+    border-top: 1.5px solid #999; /* Ajoute une bordure au-dessus des cellules */
+    text-align: center; /* Centre le texte */
+    color: #37a6ff; /* Définit une couleur de texte bleue */
+}
+
+tr {
+    border-bottom: 1.5px solid #999; /* Ajoute une bordure en bas des lignes */
+}
+
+.total th {
+    float: left; /* Fait flotter le texte à gauche */
+    font-weight: 500; /* Définit un poids de police plus gras */
+    color: #37a6ff; /* Définit une couleur de texte bleue */
+    padding: 10px; /* Ajoute du remplissage */
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BIENVENUE DANS NOTRE SITE</title>
+ <link rel="stylesheet" href="style.cc">
+ <link rel="stylesheet" href="dell.html">
+</head>
+<body>
+  <header>
+    <!-- HEADER HTML -->
+<header class="site-header">
+  <div class="logo">mon<span>site</span></div>
+  <input type="text" class="search-bar" placeholder="Rechercher...">
+  <button class="search-btn">Aller</button>
+  <nav class="menu">
+    <a href="connexion.php">Votre compte</a>
+    <a href="#">Aide</a>
+    <a href="Panier.php">Panier</a>
+  </nav>
+  <!-- Champ de recherche -->
+
+<!-- Liste des produits -->
+<div class="products_list">
+  <div class="product" data-nom="t-shirt"> <!-- Produit 1, mot-clé de recherche = "t-shirt" -->
+  
+  </div>
+
+  <div class="product" data-nom="chaussures"> <!-- Produit 2, mot-clé de recherche = "chaussures" -->
+    
+  </div>
+</div>
+
+<!-- Script JavaScript -->
+<script>
+  const searchInput = document.getElementById("searchInput"); // Récupère le champ de recherche
+  const products = document.querySelectorAll(".product"); // Récupère tous les produits
+
+  searchInput.addEventListener("input", function () { // Écoute l’événement "input"
+    const searchTerm = this.value.toLowerCase(); // Récupère le texte tapé, en minuscules
+products.forEach(product => {
+      const nomProduit = product.getAttribute("data-nom").toLowerCase(); // Récupère le nom du produit
+      if (nomProduit.includes(searchTerm)) {
+        product.style.display = "block"; // Affiche le produit s’il correspond à la recherche
+      } else {
+        product.style.display = "none"; // Sinon, le cache
+      }
+    });
+  });
+</script>
+</header>
+    <h1>BIENVENUE DANS NOTRE SITE</h1>
+    <p>Decouvrez nos produits maintenant</p>
+  </header>
+  
+</header>
+<center>
+<h1>ORDINATEUR BUREAU</h1>
+</center>
+</header>
+  <section class="produits">
+    <div class="marques-container">
+    <div class="produit">
+      <img src="image/dell3.jpg" alt="">
+      <h2>DELL</h2>
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>   
+      <div class="produit">
+        <img src="image/lenovo.jpg" alt="">
+        <h2>LENOVO</h2>
+        <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+      </div>
+    <div class="produit">
+      <img src="image/PH.jpg" alt="">
+      <h2>PH</h2>     
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/ACER.jpg" alt="">
+      <h2>ACER</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/asus.jpg" alt="">
+      <h2>Asus</h2>     
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>     
+    </div>
+    <div class="produit">
+      <img src="image/MSI.jpg" alt="">
+      <h2>MSI</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/ntel NUC.jpg" alt="">
+      <h2>INTEL NUC</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button> 
+    </div>
+    </section>    
+  </header>
+  <center>
+  <h1>ORDINATEUR PORTABLE</h1>
+  </center>
+  </header>
+  <section class="produits">
+    <div class="marques-container">
+    <div class="produit">
+      <img src="image/apple.jpg" alt="">
+      <h2>APPLE</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>   
+      <div class="produit">
+        <img src="image/DELL.jpg" alt="">
+        <h2>DELL</h2>        
+        <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+      </div>
+    <div class="produit">
+      <img src="image/PH1.jpg" alt="">
+      <h2>Ordinateur bureau</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/LENOVO0.jpg" alt="">
+      <h2>LENOVO</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/ANSU0.jpg" alt="">
+      <h2>ANSU</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/ACER0.jpg" alt="">
+      <h2>ACER</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/MSI.jpg" alt="">
+      <h2>MSI</h2>
+       <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/SAMSUG.jpg" alt="">
+      <h2>SAMSUG</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/DD2.jpg" alt="">
+      <h2>HUAWEI</h2>     
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/SAMSUG.jpg" alt="">
+      <h2>Gigabyte</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/MICRO.jpg" alt="">
+      <h2>MICROSOFT</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    </div>
+    </section>
+  </header>
+  <center>
+  <h1>IMPRIMANTE</h1>
+  </center>
+  </header>
+    <section class="produits">
+    <div class="marques-container">
+    <div class="produit">
+      <img src="image/encre.jpg" alt="">
+      <h2>IMPRIMANTE JET D'ENCRE</h2>     
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>   
+      <div class="produit">
+        <img src="image/laser.jpg" alt="">
+        <h2>IMPRIMANTE LASER</h2>       
+        <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+      </div>
+    <div class="produit">
+      <img src="image/multifoction.jpg" alt="">
+      <h2>IMPRIMANTE MULTIFONCTION</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/photo.jpg" alt="">
+      <h2> IMPRIMANTE PHOTO</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/portable.jpg" alt="">
+      <h2> IMPRIMANTE PORTABLE</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/3d.jpg" alt="">
+      <h2> IMPRIMANTE 3D</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/thermique.jpg" alt="">
+      <h2> IMPRIMANTE THERMIQUE</h2>      
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>
+    </div>
+    <div class="produit">
+      <img src="image/portable.jpg" alt="">
+      <h2> IMPRIMANTE MATRICIELLE</h2>
+      <button onclick="window.location.href='details_dell.html'">En savoir plus</button>           
+    </div>
+  </div>
+    </section>
+    <!-- Pied de page -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#">Conditions générales de vente</a>
+    <a href="#">Vos informations personnelles</a>
+    <a href="#">Cookies et Publicité</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/https://web.facebook.com/muteba.patrick.pmk" target="_blank">
+      <img src="image/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/https:///Applications/XAMPP/xamppfiles/htdocs/ligne/index.html" target="_blank">
+      <img src="image/instagram.jpg" alt="Instagram">
+    <a href="https://www.Whatsapp.com/https:///Applications/XAMPP/xamppfiles/htdocs/ligne/index.html" target="_blank">
+      <img src="image/instagram.jpg" alt="Instagram">
+    </a>
+    <a href="https://www.tiktok.com" target="_blank">
+      <img src="image/tiktok.png" alt="TikTok">
+    </a>
+  </div>
+  <p>© 2025 TonSite. Tous droits réservés.</p>
+</footer>
